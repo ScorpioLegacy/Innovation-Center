@@ -1,0 +1,222 @@
+body{
+    --wp--style--root--padding-top: 0;
+    --wp--style--root--padding-bottom: 0;
+    
+}
+
+footer{
+    background: #004928;
+    padding: 10px;
+}
+
+h1, h2, h3{
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.footer-wrapper{
+    color: white;
+    display: flex;
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+
+.ftic-logo-footer{
+    padding-top: 30px;
+    padding-left: 60px;
+}
+
+.logo-footer{
+    width: 200px;
+    height: auto;
+}
+
+.three-feu-logo-wrapper{
+    padding-bottom: 20px;
+    padding-left: 60px;
+}
+
+.feu-logo-footer{
+    width: 200px;
+    height: auto;
+}
+
+.about-section{
+    font-weight: 700;
+    font-size: 20px;
+    margin: 5px;
+    padding-left: 155px;
+}
+
+.about-header {
+    display: inline-block;
+    position: relative;
+    font-size: 24px; /* Adjust the font size as needed */
+    color: white; /* Text color */
+    margin-bottom: 5px;
+}
+
+.about-header::before {
+    content: "";
+    position: absolute; 
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 3px; /* Adjust the thickness of the underline as needed */
+    background: linear-gradient(90deg, #00FF00, transparent 50%, transparent);
+}
+
+.about-links{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 5px;
+    text-align: left;
+}
+
+.about-links a{
+    font-size: 16px;
+    color: white;
+    margin-top: 0;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.about-links a:hover{
+    border-bottom: 2px solid #7141FF;
+    transition: border-bottom 0.5s ease-in-out;
+}
+
+
+.icon-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.icon-wrapper img{
+    width: 40px;
+    height: auto;
+    padding-bottom: 5px;
+    margin-top: 5px;
+}
+
+.icon-wrapper p{
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.icon-wrapper a{
+    text-decoration: none;
+    color: white;
+    margin-left: 5px;
+}
+
+.icon-wrapper a:hover{
+    border-bottom: 2px #7141FF solid;
+    transition: border-bottom 0.5s ease-in-out;
+}
+
+@media (max-width: 767px) {
+    .footer-wrapper {
+        display: block;
+    }
+    .ftic-logo-footer,
+    .three-feu-logo-wrapper {
+        text-align: left;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+    }
+
+    .about-section{
+        margin-top: 25px;
+        padding-left: 0;
+    }
+ 
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Styles for screens with a width between 768px and 991px (e.g., tablets) */
+    .footer-wrapper {
+        display: block;
+    }
+
+    .ftic-logo-footer,
+    .three-feu-logo-wrapper {
+        text-align: left;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+    }
+
+    .about-section{
+        margin-top: 25px;
+        padding-left: 0;
+    }
+}
+
+
+
+.btn a:hover{
+    background-color: #004928 !important;
+    color: white !important;
+    transform: scale(1.5);
+    transition: transform 0.3s  ease-in-out;
+    text-decoration: none;
+}
+
+.pic-card{
+    overflow: hidden;
+}
+
+.pic-card .card-info{
+    margin-bottom: -100% !important;
+    background-color: black;
+    transition: margin 0.5s ease;
+}
+
+.pic-card:hover .card-info{
+    margin: 0% !important;
+}
+
+.center{
+    margin-top: 50px !important;
+}
+
+
+.button-ftic{
+    border-radius: 25px !important;
+    background-color: #004928 !important;
+    color: white !important;
+}
+
+.menu:hover{
+    color:  #7141FF;
+    transition: border-bottom 0.5s ease-in-out;
+}
+
+.announcement-btn:hover{
+    transform: scale(1.2);
+    transition: transform 0.7s ease-in-out;
+}
+
+
+
+:where(.wp-site-blocks) > *{
+    margin-block-start: 0 !important;
+}
+
+
+.maps{
+    margin-block-end: 1.5rem !important;
+}
+
+.circle-image img{
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    }
