@@ -1,0 +1,321 @@
+body{
+    --wp--style--root--padding-top: 0;
+    --wp--style--root--padding-bottom: 0;
+    
+}
+
+div #header{
+    display: none;
+}
+
+footer{
+    background: #004928;
+    padding: 10px;
+}
+
+h1, h2, h3{
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+.nav-link  a{
+    text-decoration: none !important;
+}
+
+.footer-wrapper{
+    color: white;
+    display: flex;
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+
+.ftic-logo-footer{
+    padding-bottom: 20px;
+    padding-left: 60px;
+}
+
+.logo-footer{
+    width: 200px;
+    height: auto;
+}
+
+.three-feu-logo-wrapper{
+    padding-top: 20px;
+    padding-left: 60px;
+}
+
+.is-style-facilities{
+        box-shadow: 0 7px 13px rgba(0,0,0,0.12), 0 5px 7px rgba(0,0,0,0.24);
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);  
+        border-radius: 15px;
+        background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 70%); 
+
+        
+
+}
+.is-style-facilities:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 13px 13px rgba(0,0,0,0.22);
+
+  }
+
+.text-facilities:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%; /* Adjust the height of the overlay as needed */
+    background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    pointer-events: none; /* Allows clicks to go through the overlay */
+
+}
+
+.text-col {
+    position: absolute;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+}
+
+.feu-logo-footer{
+    width: 200px;
+    height: auto;
+}
+
+.about-section{
+    font-weight: 700;
+    font-size: 20px;
+    margin: 5px;
+    padding-left: 155px;
+}
+
+.about-header {
+    display: inline-block;
+    position: relative;
+    font-size: 24px; /* Adjust the font size as needed */
+    color: white; /* Text color */
+    margin-bottom: 5px;
+}
+
+.about-header::before {
+    content: "";
+    position: absolute; 
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 3px; /* Adjust the thickness of the underline as needed */
+    background: linear-gradient(90deg, #00FF00, transparent 50%, transparent);
+}
+
+.about-links{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 5px;
+    text-align: left;
+    font-weight: 300;
+}
+
+.about-links a{
+    font-size: 16px;
+    color: white;
+    margin-top: 0;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.about-links a:hover{
+    border-bottom: 2px solid #7141FF;
+    transition: border-bottom 0.5s ease-in-out;
+}
+
+
+.icon-wrapper{
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+}
+
+.icon-wrapper img{
+    width: 40px;
+    height: auto;
+    padding-bottom: 5px;
+    margin-top: 5px;
+}
+
+.icon-wrapper p{
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.icon-wrapper a{
+    text-decoration: none;
+    color: white;
+    margin-left: 5px;
+    
+}
+
+.icon-wrapper a:hover{
+    border-bottom: 2px #7141FF solid;
+    transition: border-bottom 0.5s ease-in-out;
+}
+
+.icon-wrapper span{
+    padding: 5px;
+}
+
+@media (max-width: 767px) {
+    .footer-wrapper {
+        display: block;
+    }
+    .ftic-logo-footer,
+    .three-feu-logo-wrapper {
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+
+
+    .about-section{
+        margin-top: 25px;
+        padding-left: 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    .about-section .about-links{
+        padding: 25px;
+        font-weight: 300;
+    }
+
+    .icon-wrapper{
+        font-weight: 300;
+        margin-top: 15px;
+    }
+
+    .icon-wrapper img{
+        margin-right: 5px;
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Styles for screens with a width between 768px and 991px (e.g., tablets) */
+    .footer-wrapper {
+        display: block;
+    }
+    .ftic-logo-footer,
+    .three-feu-logo-wrapper {
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .about-section{
+        margin-top: 25px;
+        padding-left: 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    .about-section .about-links{
+        padding: 25px;
+        font-weight: 300;
+    }
+
+    .icon-wrapper{
+        font-weight: 300;
+        margin-top: 15px;
+    }
+
+    .icon-wrapper img{
+        margin-right: 5px;
+    }
+}
+
+
+
+.btn a:hover{
+    background-color: #004928 !important;
+    color: white !important;
+    transform: scale(1.5);
+    transition: transform 0.3s  ease-in-out;
+    text-decoration: none;
+}
+
+.pic-card{
+    overflow: hidden;
+}
+
+.pic-card .card-info{
+    margin-bottom: -100% !important;
+    background-color: black;
+    transition: margin 0.5s ease;
+}
+
+.pic-card:hover .card-info{
+    margin: 0% !important;
+}
+
+.center{
+    margin-top: 50px !important;
+}
+
+
+.button-ftic{
+    border-radius: 25px !important;
+    background-color: #004928 !important;
+    color: white !important;
+}
+
+
+.menu a{
+    text-decoration: none !important;
+}
+
+.menu:hover{
+    color:  #7141FF;
+    transition: ease-in-out 0.5s;
+}
+
+.announcement-btn:hover{
+    transform: scale(1.2);
+    transition: transform 0.7s ease-in-out;
+}
+
+
+
+:where(.wp-site-blocks) > *{
+    margin-block-start: 0 !important;
+}
+
+
+.maps{
+    margin-block-end: 1.5rem !important;
+}
+
+.circle-image img{
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.program-card{ 
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 15px 36px -5px, rgba(0, 0, 0, 0.3) 0px 8px 24px -8px;
+}
