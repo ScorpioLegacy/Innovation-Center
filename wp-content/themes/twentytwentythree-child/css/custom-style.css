@@ -4,6 +4,10 @@ body{
     
 }
 
+div #header{
+    display: none;
+}
+
 footer{
     background: #004928;
     padding: 10px;
@@ -17,6 +21,11 @@ p{
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+
+.nav-link  a{
+    text-decoration: none !important;
+}
+
 .footer-wrapper{
     color: white;
     display: flex;
@@ -25,7 +34,7 @@ p{
 }
 
 .ftic-logo-footer{
-    padding-top: 30px;
+    padding-bottom: 20px;
     padding-left: 60px;
 }
 
@@ -35,8 +44,43 @@ p{
 }
 
 .three-feu-logo-wrapper{
-    padding-bottom: 20px;
+    padding-top: 20px;
     padding-left: 60px;
+}
+
+.is-style-facilities{
+        box-shadow: 0 7px 13px rgba(0,0,0,0.12), 0 5px 7px rgba(0,0,0,0.24);
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);  
+        border-radius: 15px;
+        background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 70%); 
+
+        
+
+}
+.is-style-facilities:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 13px 13px rgba(0,0,0,0.22);
+
+  }
+
+.text-facilities:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%; /* Adjust the height of the overlay as needed */
+    background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    pointer-events: none; /* Allows clicks to go through the overlay */
+
+}
+
+.text-col {
+    position: absolute;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
 }
 
 .feu-logo-footer{
@@ -74,6 +118,7 @@ p{
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 5px;
     text-align: left;
+    font-weight: 300;
 }
 
 .about-links a{
@@ -93,6 +138,7 @@ p{
 .icon-wrapper{
     display: flex;
     align-items: center;
+    font-weight: 300;
 }
 
 .icon-wrapper img{
@@ -111,11 +157,16 @@ p{
     text-decoration: none;
     color: white;
     margin-left: 5px;
+    
 }
 
 .icon-wrapper a:hover{
     border-bottom: 2px #7141FF solid;
     transition: border-bottom 0.5s ease-in-out;
+}
+
+.icon-wrapper span{
+    padding: 5px;
 }
 
 @media (max-width: 767px) {
@@ -124,17 +175,38 @@ p{
     }
     .ftic-logo-footer,
     .three-feu-logo-wrapper {
-        text-align: left;
         padding-top: 0;
         padding-bottom: 0;
         padding-left: 0;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
     }
+
+
 
     .about-section{
         margin-top: 25px;
         padding-left: 0;
+        text-align: center;
+        align-items: center;
     }
- 
+
+    .about-section .about-links{
+        padding: 25px;
+        font-weight: 300;
+    }
+
+    .icon-wrapper{
+        font-weight: 300;
+        margin-top: 15px;
+    }
+
+    .icon-wrapper img{
+        margin-right: 5px;
+    }
+
 
 }
 
@@ -143,18 +215,36 @@ p{
     .footer-wrapper {
         display: block;
     }
-
     .ftic-logo-footer,
     .three-feu-logo-wrapper {
-        text-align: left;
         padding-top: 0;
         padding-bottom: 0;
         padding-left: 0;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
     }
 
     .about-section{
         margin-top: 25px;
         padding-left: 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    .about-section .about-links{
+        padding: 25px;
+        font-weight: 300;
+    }
+
+    .icon-wrapper{
+        font-weight: 300;
+        margin-top: 15px;
+    }
+
+    .icon-wrapper img{
+        margin-right: 5px;
     }
 }
 
@@ -193,9 +283,14 @@ p{
     color: white !important;
 }
 
+
+.menu a{
+    text-decoration: none !important;
+}
+
 .menu:hover{
     color:  #7141FF;
-    transition: border-bottom 0.5s ease-in-out;
+    transition: ease-in-out 0.5s;
 }
 
 .announcement-btn:hover{
@@ -219,4 +314,8 @@ p{
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     -o-border-radius: 50%;
-    }
+}
+
+.program-card{ 
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 15px 36px -5px, rgba(0, 0, 0, 0.3) 0px 8px 24px -8px;
+}
