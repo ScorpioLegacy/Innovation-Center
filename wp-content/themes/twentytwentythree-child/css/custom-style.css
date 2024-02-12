@@ -129,6 +129,33 @@ p{
         padding-bottom: 0;
         padding-left: 0;
     }
+<<<<<<< Updated upstream
+=======
+    .wwo-icon {
+        width: 33px !important;
+    }
+    .wwo-icon-1 {
+        width: 65px !important;
+    }
+    .wwo-icon-2 {
+        width: 35px !important;
+    }
+    .wwo-icon-3 {
+        width: 30px !important;
+    }
+    .wwo-icon-4 {
+        width: 44px !important;
+    }
+    .wwo-icon-5 {
+        width: 30px !important;
+    }
+    .fix {
+        margin-left: -50% !important;
+    }
+    .ffix {
+        font-size: 12px !important;
+    }
+>>>>>>> Stashed changes
 
     .about-section{
         margin-top: 25px;
@@ -140,6 +167,25 @@ p{
 
 @media (min-width: 768px) and (max-width: 991px) {
     /* Styles for screens with a width between 768px and 991px (e.g., tablets) */
+    .wwo-icon {
+        width: 40px !important;
+    }
+    .wwo-icon-1 {
+        width: 90px !important;
+    }
+    .wwo-icon-2 {
+        width: 70px !important;
+    }
+    .wwo-icon-3 {
+        width: 59px !important;
+    }
+    .wwo-icon-4 {
+        width: 85px !important;
+    }
+    .fix-1 {
+        margin-left: -8% !important;
+    }
+
     .footer-wrapper {
         display: block;
     }
@@ -219,4 +265,12 @@ p{
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     -o-border-radius: 50%;
+<<<<<<< Updated upstream
     }
+=======
+}
+
+.program-card{ 
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 15px 36px -5px, rgba(0, 0, 0, 0.3) 0px 8px 24px -8px;
+}
+>>>>>>> Stashed changes
